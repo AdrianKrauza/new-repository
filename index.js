@@ -10,7 +10,7 @@ for (x = 2; x <= args.length; x++) {
 for (z = x+ 2; z <= args.length - 1; z++) {
 	description === '' ? (description += args[z]) : (description += ' ' + args[z]);
 }
-console.log(description);
+
 
 (async () => {
 	const browser = await puppeteer.launch();

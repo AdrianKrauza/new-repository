@@ -9,7 +9,7 @@ if "%name%" == "" goto :name
     echo Repository name: %name%
        set /p private=" Repository private(f = false,t = true): "
 if "%private%" NEQ "f" if "%private%" NEQ "t" goto :private
-set /p description=" Description (optional)" || SET description="none"
+set /p description=" Description (optional): " || SET description="none"
 
 node index.js %name% "#stop&" %private% %description%
 pause  
